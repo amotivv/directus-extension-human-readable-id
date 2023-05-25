@@ -90,10 +90,17 @@
              * Save manually edited properties
              */
             save: function() {
-                let value = [this.editAdjective, this.editColor, this.editAnimal].join(this.delim);
+                const date = new Date();
+                const year = date.getFullYear().toString().substr(-2);
+                const month = ('0' + (date.getMonth() + 1)).slice(-2);
+                const day = ('0' + date.getDate()).slice(-2);
+                const datePortion = year + month + day;
+
+                let value = [this.editAdjective, this.editColor, this.editAnimal, datePortion].join(this.delim);
                 this.$emit('input', value);
                 this.editActive = false;
             },
+
 
             /**
              * Get a new human-readable-id for the value
