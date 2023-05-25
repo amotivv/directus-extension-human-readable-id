@@ -1,8 +1,10 @@
-Directus Extension: dwaring87-interface-human-readable-id
+Directus Extension: directus-extension-human-readable-id
 ====
 
 A Directus v9 Interface for generating a human-readable ID for a text or string field in a collection.
-The ID takes the form of `{adjective}-{color}-{animal}`, such as **`spicy-blue-eagle`** or **`mean-pink-starfish`**.
+The ID takes the form of `{adjective}-{color}-{animal}-{datestamp}`, such as **`spicy-blue-eagle-230525`** or **`cuddly-pink-starfish-092322`**.
+
+Based on original code here: [https://github.com/dwaring87/directus-extension-human-readable-id](https://github.com/dwaring87/directus-extension-human-readable-id)
 
 ![Screenshot of the new item creation page showing the human-readable-id field](https://user-images.githubusercontent.com/7526014/183149483-a77b5f48-a574-485e-8f77-3f917dad21ce.png)
 
